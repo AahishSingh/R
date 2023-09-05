@@ -1,0 +1,12 @@
+# Define a function to calculate the square of a number
+square <- function(x) {
+  result <- x^2
+  return(result)
+}
+
+# Call the function and store the result
+num <- 5
+square_result <- square(num)
+
+# Print the result
+print(square_result)

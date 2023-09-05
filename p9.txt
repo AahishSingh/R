@@ -1,0 +1,20 @@
+# Code illustrating the return statement
+my_function <- function(a, b) {
+  if (a > b) {
+    return(a - b)
+  } else {
+    return(b - a)
+  }
+}
+
+result <- my_function(5, 3)
+print(result)
+
+# Code illustrating the break statement
+my_vector <- c(1, 2, 3, 4, 5)
+for (num in my_vector) {
+  if (num == 3) {
+    break
+  }
+  print(num)
+}

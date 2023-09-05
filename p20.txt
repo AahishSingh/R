@@ -1,0 +1,25 @@
+# Read CSV file
+data <- read.csv("data.csv")
+
+# Display the structure of the data
+str(data)
+
+# Display the summary statistics of numeric columns
+summary(data$NumericColumn)
+
+# Calculate the mean of a numeric column
+mean_value <- mean(data$NumericColumn)
+print(paste("Mean:", mean_value))
+
+# Calculate the maximum value of a numeric column
+max_value <- max(data$NumericColumn)
+print(paste("Maximum Value:", max_value))
+
+# Calculate the minimum value of a numeric column
+min_value <- min(data$NumericColumn)
+print(paste("Minimum Value:", min_value))
+
+# Count the frequency of values in a categorical column
+frequency <- table(data$CategoricalColumn)
+print("Frequency of CategoricalColumn:")
+print(frequency)
