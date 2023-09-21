@@ -1,0 +1,11 @@
+vector <- c(1, 2, 3, 4, 5)
+# Iterate over each element in the vector
+for (i in vector) {
+ # Check if the element is greater than 3
+ if (i > 3) {
+ stop("Error: Element greater than 3 found!") # Print error
+message and stop the loop
+ } else {
+ print(i) # Print the element if it's not greater than 3
+ }
+}

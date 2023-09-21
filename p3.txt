@@ -1,0 +1,13 @@
+counter <- 1
+# Execute the loop while the counter is less than or equal to 5
+while (counter <= 5) {
+ # Check if the counter is equal to 3
+ if (counter == 3) {
+ stop("Error: Counter value is 3!") # Print error message and stop the
+loop
+ } else {
+ print(counter) # Print the counter value if it's not equal to 3
+ }
+
+ counter <- counter + 1 # Increment the counter
+}

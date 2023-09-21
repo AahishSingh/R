@@ -1,0 +1,11 @@
+# Create a vector
+values <- c(12, 15, 10, 8, 20, 16)
+# Create a factor defining groups
+groups <- factor(c("A", "B", "A", "B", "B", "A"))
+# Using tapply() function
+tapply_result <- tapply(values, groups, mean)
+print(tapply_result)
+# Using aggregate() function
+data <- data.frame(values, groups)
+aggregate_result <- aggregate(values ~ groups, data, mean)
+print(aggregate_result)

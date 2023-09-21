@@ -1,0 +1,28 @@
+vector1 <- c(1, 2, 3, 4, 5)
+vector2 <- c(6, 7, 8, 9)
+vector3 <- c(10,11)
+
+length_vector1 <- length(vector1)
+length_vector2 <- length(vector2)
+length_vector3 <- length(vector3)
+
+print(length_vector1)
+print(length_vector1)
+print(length_vector1)
+
+if (length_vector1 > length_vector2) {
+ result <- vector1 * 2 # Multiply each element of vector1 by 2
+ print("Result:", result)
+}
+
+else if (length_vector1 < length_vector2) {
+ result <- vector2 + 5 
+ print("Result:", result)
+}
+
+else {
+ 	print("Both vector are equal")
+	result <- vector1 - vector2
+	print(paste(result))
+	print(sprint("%s%d",'result:',resut))
+}

@@ -1,0 +1,11 @@
+# Create a two-dimensional dataset
+dataset <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3)
+# Calculate the mean of the entire dataset
+mean_value <- mean(dataset)
+print(mean_value)
+# Calculate the mean along the rows (axis 1)
+row_means <- apply(dataset, 1, mean)
+print(row_means)
+# Calculate the mean along the columns (axis 2)
+col_means <- apply(dataset, 2, mean)
+print(col_means)
